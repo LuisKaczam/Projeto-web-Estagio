@@ -1,0 +1,30 @@
+[build]
+  command = "npm run build"  # ou o comando apropriado para construir seu projeto
+  publish = "dist"  # ou o diretório de saída do seu processo de construção (build)
+
+
+[[redirects]]
+  from = "/cadastro"
+  to = "/src/cadastro.html"
+  status = 200
+
+[[redirects]]
+  from = "/login"
+  to = "/src/login.html"
+  status = 200
+
+[[redirects]]
+  from = "/home"
+  to = "/src/home.html"
+  status = 200
+
+[[redirects]]
+  from = "/ranking"
+  to = "/src/ranking.html"
+  status = 200
+
+[[redirects]]
+  from = "/recuperar-senha"
+  to = "/src/recuperarSenha.html"
+  status = 200
+

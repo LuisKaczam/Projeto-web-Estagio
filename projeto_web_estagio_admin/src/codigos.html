@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chaves</title>
+    <link rel="stylesheet" href="/src/styles.css">
+  <link href="/dist/output.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/df95d3a802.js" crossorigin="anonymous"></script>
+</head>
+<header id="header" class="header-wrapper">
+    <div class="header w-full">
+      <div class="checkbox-container">
+        <div class="checkbox-wrapper">
+          <input type="checkbox" id="toggle">
+          <label class="checkbox" for="toggle">
+            <div class="trace"></div>
+            <div class="trace"></div>
+            <div class="trace"></div>
+          </label>
+          <div class="menu"></div>
+          <nav class="menu-items">
+            <ul>
+              <li class="itemMenu"><i style="color: #083263; font-size: 28px;" class="fas fa-key"></i><a href="codigos.html">Chaves</a></li>
+              <li class="itemMenu"><i style="color: #083263; font-size: 28px;" class="fas fa-sign-out-alt"></i><a onclick="logout()">Sair</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div>
+        <div class="p-8 flex items-center justify-center">
+          <img id="logo" src="./images/logo-branca-u-vermelho.png" alt="Logo" style="height: 3rem; margin-left: 2.5rem;">
+        </div>
+        </div>
+        <div id="navbar1" class="ml-8 mt-6 w-full">
+          <ul class="flex justify-end text-white" style="margin-right: 5rem;">
+            <li class="p-4 item"><a href="codigos.html"><i class="fas fa-key"></i> Chaves</a></li>
+            <li class="p-4 item" onclick="logout()"><i class="fas fa-sign-out-alt"></i> Sair</li>
+         </ul>
+        </div>
+    </div>
+    </div>
+  </header>
+<body class="h-min-screeb" style="background-color: rgb(209 213 219);">
+  <div id="avisoCodigos" class="mt-6 w-full">
+    <p class="mt-8 text-center">Nenhum Código Cadastrado</p>
+  </div>
+    <div class="w-32 mb-8">
+        <div class="flex justify-center items-center w-full">
+            <div id="table-container" class="p-8 mt-2 w-full"></div>
+          </div>
+    </div>
+      <div class="p-4 w-24">
+        <div class="w-full sm:w-3/4 md:w-2/3 lg:w-1/2">
+          <div class="relative">
+            <label for="inputChaves" class="block mb-2 text-xs font-medium text-gray-500 uppercase tracking-wider">Inserir Novas Chaves<span class="text-sm text-gray-600"> *Separe-as com ";"</span></label>
+            <textarea id="inputChaves" rows="4" class="w-full block p-2.5 w-full sm:w-3/4 md:w-2/3 lg:w-1/2 text-sm bg-white rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500" placeholder="Inserir novas chaves..."></textarea>
+            <span id="countCaracteres" class="text-xs text-gray-500 mt-1"></span>  
+        </div>
+        </div>
+      </div>
+      <div class="p-4">
+        <label for="counter-input" class="block mb-2 text-xs font-medium text-gray-500 uppercase tracking-wider">Quantos Pontos valem?</label>
+        <input type="number" id="counter-input" class="px-4 py-2 bg-white text-gray-700 font-semibold rounded-lg shadow-md" value="0">
+      </div> 
+      <div id="divBtnChave" class="relative text-center bottom-0" style="bottom: -3rem;">
+        <button id="btnChaves" type="submit" class="btnsForms mt-8 bg-blue-500 text-white rounded-md px-4 py-2 mt-2">Cadastrar Chave</button>
+      </div>
+      <div style="margin-top: 10rem;">
+        <footer class="footer mt-6 bg-neutral-200 text-center dark:bg-neutral-700 lg:text-left">
+          <div class="p-4 mt-6 text-center text-neutral-700 dark:text-neutral-200">
+            Faculdade Uniguaçu 2023 
+          </div>
+        </footer>
+      </div>  
+      <div class="loader">
+        <div class="spinner"></div>
+        <div class="text font-bold text-white">Carregando...</div>
+      </div>
+      <script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-app-compat.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-auth-compat.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-database-compat.js"></script>
+      <script src="./js/config.js"></script>
+      <script src="./js/validaSessao.js"></script>
+      <script src="./js/codigos.js"></script>
+      <script src="./js/logout.js"></script>
+</body>
+</html>
