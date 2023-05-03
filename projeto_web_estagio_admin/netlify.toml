@@ -5,23 +5,19 @@
 
 [[redirects]]
   from = "/cadastro"
-  to = "/src/cadastro.html"
+  to = "/src/cadastroAdmin.html"
   status = 200
 
 [[redirects]]
-  from = "/https://main--ornate-babka-f43bde.netlify.app/"
-  to = "/src/login.html"
+  from = "/login"
+  to = "/src/loginAdmin.html.html"
   status = 200
 
 [[redirects]]
   from = "/home"
-  to = "/src/home.html"
+  to = "/src/codigos.html"
   status = 200
 
-[[redirects]]
-  from = "/ranking"
-  to = "/src/ranking.html"
-  status = 200
 
 [[redirects]]
   from = "/recuperar-senha"
