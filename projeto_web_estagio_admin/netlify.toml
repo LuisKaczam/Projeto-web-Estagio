@@ -9,7 +9,7 @@
   status = 200
 
 [[redirects]]
-  from = "/login"
+  from = "/https://main--ornate-babka-f43bde.netlify.app/"
   to = "/src/login.html"
   status = 200
 
